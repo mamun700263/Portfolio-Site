@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background-color: rgb(26, 26, 26)">
+<body style="background-color: rgb(26, 26, 26)" >
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
@@ -22,8 +22,8 @@
 
 
     <!-- start of the header where i will have to add profile,links and some more info about me -->
-    <header>
-        <nav class="navbar navbar-expand-lg position-relative container">
+    <header id="home">
+        <nav class="navbar navbar-expand-lg  container fixed-top " >
             <div class="navbar-brand d-flex center ">
                 <a class="navbar-brand" href="/"><img src="icons/logo.png" alt="logo" style="width: 80px" /></a>
             </div>
@@ -39,16 +39,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-white" href="#">Portfolio</a>
+                            <a class="nav-link active text-white" href="#Portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-white" href="#">Skills</a>
+                            <a class="nav-link active text-white" href="#skills">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-white" href="#">About</a>
+                            <a class="nav-link active text-white" href="#contact">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="btn btn-primary" href="projects-img/cv mamun.pdf" download="MY CV"> Resume<i
@@ -102,7 +102,7 @@
 
     <main class="container ">
 
-        <h1 class="text-center text-white">Portfolio</h1>
+        <h1 class="text-center text-white" id="Portfolio">Portfolio</h1>
 
         <div class=" mt-4 text-white  d-flex container row">
             <div id="carouselExampleIndicators" class="carousel slide col-12 col-md-6 col-lg-6 col-sm-12 ">
@@ -219,7 +219,7 @@
 
         </div>
 
-        <div class="d-flex  row mt-5" >
+        <div class="d-flex  row mt-5" id="skills">
 
             <div class="expertise    col-lg-8 col-12 col-sm-12 col-xm-12 col-md-6">
                 <h3 ><span class="bg-info ">Expert:</span></h3>
@@ -280,7 +280,7 @@
 
 <hr>
 
-    <footer class="text-center text-white align-items-center justify-content-center">
+    <footer class="text-center text-white align-items-center justify-content-center" id="contact">
         <h1 class="text-info">Contact Me</h1>
         <div class="d-flex justify-content-center">
             <div class="contact border shadow p-3 mb-5  rounded col-lg-8 text-center">
